@@ -94,6 +94,7 @@
  */
 - (void) calendarDayTimelineView:(TKCalendarDayView*)calendarDay didMoveToDate:(NSDate*)date;
 
+
 @end
 
 #pragma mark - TKCalendarDayViewDataSource
@@ -107,5 +108,7 @@
  @return Returns an array of `TKCalendarDayEventView` objects.
  */
 - (NSArray *) calendarDayTimelineView:(TKCalendarDayView*)calendarDay eventsForDate:(NSDate *)date;
+
+-(UIView*) availabilityImageViewWithFrame:(CGRect) rect forDate:(NSDate *) date;
 
 @end
